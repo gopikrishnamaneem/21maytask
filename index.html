@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <style>
+        
+      [type]{
+        background-color: aqua;
+      }
+      [type="password"]{
+        background-color: blueviolet;
+      }
+      [type~=email]{
+        background-color: lightgreen;
+      }
+      [type^=date]{
+           background-color: brown;
+      }
+      [name|=age]{
+        background-color: lawngreen;
+      }
+      input[value^=sumbit]
+      {
+        background: palevioletred;
+      }
+      [title]{
+        background-color: lightpink;
+      }
+      [title=cap]{
+background: khaki;
+      }
+      [class]{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+    <h1 class="text">Styling the Form using Attribute selectors</h1>
+    <fieldset title="color">
+        <legend title="cap">REGISTRATION FORM</legend>
+        <form action="">
+            <label for="username" >username:</label>
+            <input type="text" name= uername id="username" >
+            <label for="pswd">password:</label>
+            <input type="password" name= pswd id="pswd" ><br><br>
+            <label for="email">email:</label>
+            <input type="email" name= email id="email" >
+            <label for="date">dob:</label>
+            <input type="date" id="date" name="dob" ><br><br>
+            <label for="age">age:</label>
+            <input type="number" id="age" name="age-mine">
+            <input type="radio" id="gender" name="gender" checked target="someone">
+            <label for="gender">male:</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="gender">female:</label><br><br>
+            <input type="submit" value="submit">
+            <input type="reset"><br><br><br>
+            <input type="checkbox" checked>
+            <p> I certify that the information I have written on the application form and the documents I have submitted to be true and accurate.</p>
+
+        </form>
+    </fieldset>
+</body>
+</html>
